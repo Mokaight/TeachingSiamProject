@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include "pion.h"
 
-pion_t* initialiserPion(){
+pion_t* initialiserVide(){
   pion_t* tata = malloc(sizeof(pion_t));
   tata->race = AUTRE;
   tata->poids = VIDE;
@@ -39,12 +39,12 @@ pion_t* initialiserPionMontagne(){
   tata->position.posY = 0;
   return tata;
 }
-void detruirePersonnage(pion_t* tata){
+void detruirePion(pion_t* tata){
   free(tata);
 }
 void rotationPion(pion_t* p, char rotation){
   p->orientation = rotation;
 }
 void afficherPosition(pion_t* tata){
-  printf("Le pion est en (%d,%d)\n Il est orienté vers  : %c \n Sur le plateau  = %d"/*?*/,tata->position.posX,tata->position.posY,tata->surPlateau,tata->orientation);
+  printf("Le pion est en (%d,%d)\n Il est orienté vers  : %c \n Sur le plateau  = %d",tata->position.posX,tata->position.posY,tata->orientation,tata->surPlateau);
 }

@@ -107,43 +107,49 @@
 	<stdio.h>
 	"plateau.h"
 
-1544111656 source:f:\infoteaching\info siam\main.c
+1544221306 source:c:\users\spacejourney\documents\cours\info\info siam\main.c
 	<stdlib.h>
 	<stdio.h>
 	"plateau.h"
 
-1544111656 f:\infoteaching\info siam\plateau.h
+1544111656 c:\users\spacejourney\documents\cours\info\info siam\plateau.h
 	<stdlib.h>
 	<stdio.h>
 	"pion.h"
 
-1544111656 f:\infoteaching\info siam\pion.h
+1544219131 c:\users\spacejourney\documents\cours\info\info siam\pion.h
 	<stdlib.h>
 	<stdio.h>
 	"position.h"
 
-1544111656 f:\infoteaching\info siam\position.h
+1544111656 c:\users\spacejourney\documents\cours\info\info siam\position.h
 
-1544111656 source:f:\infoteaching\info siam\pion.c
+1544219131 source:c:\users\spacejourney\documents\cours\info\info siam\pion.c
 	<stdlib.h>
 	<stdio.h>
 	<stdbool.h>
 	"pion.h"
 
-1544111656 source:f:\infoteaching\info siam\pion.h
+1544219131 source:c:\users\spacejourney\documents\cours\info\info siam\pion.h
 	<stdlib.h>
 	<stdio.h>
 	"position.h"
 
-1544112596 source:f:\infoteaching\info siam\plateau.c
+1544219131 source:c:\users\spacejourney\documents\cours\info\info siam\plateau.c
 	<stdlib.h>
 	<stdio.h>
 	"plateau.h"
 
-1544111656 source:f:\infoteaching\info siam\plateau.h
+1544111656 source:c:\users\spacejourney\documents\cours\info\info siam\plateau.h
 	<stdlib.h>
 	<stdio.h>
 	"pion.h"
 
-1544111656 source:f:\infoteaching\info siam\position.h
+1544111656 source:c:\users\spacejourney\documents\cours\info\info siam\position.h
+
+1544220446 source:c:\users\spacejourney\documents\cours\info\info siam\selection.c
+	"plateau.h"
+
+1544221103 source:c:\users\spacejourney\documents\cours\info\info siam\deplacement.c
+	"plateau.h"
 

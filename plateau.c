@@ -1,4 +1,3 @@
-
 #include<stdlib.h>
 #include<stdio.h>
 #include "plateau.h"
@@ -6,18 +5,18 @@ char ligINIT='A',lig;
 //fonction associées au plateau
 plateau_t* initialisePlateau(){
   //cette ligne sera a modifier ( maybe)
-  pion_t* init = initialiserPion();
+  pion_t* init = initialiserVide();
   pion_t* initE = initialiserPionElephant();
   pion_t* initR = initialiserPionRhino();
   pion_t* initM = initialiserPionMontagne();
 
-  plateau_t* p = malloc(sizeof(plateau_t));
+  plateau_t* p = malloc(sizeof(plateau_t)); //?????
   for(int i=0;i<5;i++){
     for(int j=0;j<5;j++){
       p->plateau[i][j] = init;
     }
   }
-  //les boucle remplisse les reserves Elephant et Rhino et Montagne , amodifier maybe
+  //les boucle remplisse les reserves Elephant et Rhino et Montagne , a modifier maybe
   for(int j=0;j<5;j++){
       p->reserveElephant[j] = initE;
     }
@@ -78,13 +77,16 @@ void afficherPlateau(plateau_t* p){
 }
 
 void preparerPlateauPourJeu(plateau_t* t){
-pion_t* M = initialiserPionMontagne(); // ?
+pion_t* M = initialiserPionMontagne(); // ambiguité x y
 M->position.posX=2;
-M->position.posY=2;
+M->position.posY=1;
+t->plateau[1][2] = M;
+M->position.posX=2;
+M->position.posY=1;
 t->plateau[2][2] = M;
 M->position.posX=2;
 M->position.posY=3;
-t->plateau[2][3] = M;
+t->plateau[3][2] = M;
 
 }
 

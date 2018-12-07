@@ -31,6 +31,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="deplacement.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -46,8 +49,8 @@
 		<Unit filename="plateau.h">
 			<Option compile="1" />
 		</Unit>
-		<Unit filename="position.h">
-			<Option compile="1" />
+		<Unit filename="selection.c">
+			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>
 			<code_completion />

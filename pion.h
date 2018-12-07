@@ -23,7 +23,7 @@ typedef struct pion_s
 }pion_t;
 
 //déclaration de mes fonctions
-pion_t* initialiserPion();
+pion_t* initialiserVide();
 pion_t* initialiserPionElephant();
 pion_t* initialiserPionRhino();
 pion_t* initialiserPionMontagne();
