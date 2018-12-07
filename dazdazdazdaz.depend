@@ -1,0 +1,149 @@
+# depslib dependency file v1.0
+1543849592 source:c:\users\mok8\desktop\test\dazdazdazdaz\main.c
+	<stdlib.h>
+	<stdio.h>
+	"plateau.h"
+
+1543849339 c:\users\mok8\desktop\test\dazdazdazdaz\plateau.h
+	<stdlib.h>
+	<stdio.h>
+	"pion.h"
+
+1543849632 c:\users\mok8\desktop\test\dazdazdazdaz\pion.h
+	<stdlib.h>
+	<stdio.h>
+	"position.h"
+
+1543849320 c:\users\mok8\desktop\test\dazdazdazdaz\position.h
+
+1543849398 source:c:\users\mok8\desktop\test\dazdazdazdaz\pion.c
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	"pion.h"
+
+1543849381 source:c:\users\mok8\desktop\test\dazdazdazdaz\plateau.c
+	<stdlib.h>
+	<stdio.h>
+	"plateau.h"
+
+1543849592 source:c:\users\spacejourney\documents\cours\info\dazdazdazdaz\main.c
+	<stdlib.h>
+	<stdio.h>
+	"plateau.h"
+
+1543916576 c:\users\spacejourney\documents\cours\info\dazdazdazdaz\plateau.h
+	<stdlib.h>
+	<stdio.h>
+	"pion.h"
+
+1543918176 c:\users\spacejourney\documents\cours\info\dazdazdazdaz\pion.h
+	<stdlib.h>
+	<stdio.h>
+	"position.h"
+
+1543849320 c:\users\spacejourney\documents\cours\info\dazdazdazdaz\position.h
+
+1543918582 source:c:\users\spacejourney\documents\cours\info\dazdazdazdaz\pion.c
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	"pion.h"
+
+1543918582 source:c:\users\spacejourney\documents\cours\info\dazdazdazdaz\plateau.c
+	<stdlib.h>
+	<stdio.h>
+	"plateau.h"
+
+1543918176 source:c:\users\spacejourney\documents\cours\info\dazdazdazdaz\pion.h
+	<stdlib.h>
+	<stdio.h>
+	"position.h"
+
+1543849320 source:c:\users\spacejourney\documents\cours\info\dazdazdazdaz\position.h
+
+1543916576 source:c:\users\spacejourney\documents\cours\info\dazdazdazdaz\plateau.h
+	<stdlib.h>
+	<stdio.h>
+	"pion.h"
+
+1544111656 source:c:\users\33642\documents\info siam\pion.h
+	<stdlib.h>
+	<stdio.h>
+	"position.h"
+
+1544111656 c:\users\33642\documents\info siam\position.h
+
+1544111656 source:c:\users\33642\documents\info siam\plateau.h
+	<stdlib.h>
+	<stdio.h>
+	"pion.h"
+
+1544111656 c:\users\33642\documents\info siam\pion.h
+	<stdlib.h>
+	<stdio.h>
+	"position.h"
+
+1544111656 source:c:\users\33642\documents\info siam\position.h
+
+1544111656 source:c:\users\33642\documents\info siam\main.c
+	<stdlib.h>
+	<stdio.h>
+	"plateau.h"
+
+1544111656 c:\users\33642\documents\info siam\plateau.h
+	<stdlib.h>
+	<stdio.h>
+	"pion.h"
+
+1544111656 source:c:\users\33642\documents\info siam\pion.c
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	"pion.h"
+
+1544112117 source:c:\users\33642\documents\info siam\plateau.c
+	<stdlib.h>
+	<stdio.h>
+	"plateau.h"
+
+1544111656 source:f:\infoteaching\info siam\main.c
+	<stdlib.h>
+	<stdio.h>
+	"plateau.h"
+
+1544111656 f:\infoteaching\info siam\plateau.h
+	<stdlib.h>
+	<stdio.h>
+	"pion.h"
+
+1544111656 f:\infoteaching\info siam\pion.h
+	<stdlib.h>
+	<stdio.h>
+	"position.h"
+
+1544111656 f:\infoteaching\info siam\position.h
+
+1544111656 source:f:\infoteaching\info siam\pion.c
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	"pion.h"
+
+1544111656 source:f:\infoteaching\info siam\pion.h
+	<stdlib.h>
+	<stdio.h>
+	"position.h"
+
+1544112596 source:f:\infoteaching\info siam\plateau.c
+	<stdlib.h>
+	<stdio.h>
+	"plateau.h"
+
+1544111656 source:f:\infoteaching\info siam\plateau.h
+	<stdlib.h>
+	<stdio.h>
+	"pion.h"
+
+1544111656 source:f:\infoteaching\info siam\position.h
+
