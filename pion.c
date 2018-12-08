@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "pion.h"
+#include "plateau.h"
 
 pion_t* initialiserVide(){
   pion_t* tata = malloc(sizeof(pion_t));
@@ -9,6 +9,7 @@ pion_t* initialiserVide(){
   tata->poids = VIDE;
   return tata;
 }
+
 pion_t* initialiserPionElephant(){
   pion_t* tata = malloc(sizeof(pion_t));
   tata->race = ELEPHANT;
@@ -19,6 +20,7 @@ pion_t* initialiserPionElephant(){
   tata->position.posY = 0;
   return tata;
 }
+
 pion_t* initialiserPionRhino(){
   pion_t* tata = malloc(sizeof(pion_t));
   tata->race = RHINO;
@@ -29,6 +31,7 @@ pion_t* initialiserPionRhino(){
   tata->position.posY = 0;
   return tata;
 }
+
 pion_t* initialiserPionMontagne(){
   pion_t* tata = malloc(sizeof(pion_t));
   tata->race = AUTRE;
@@ -39,12 +42,26 @@ pion_t* initialiserPionMontagne(){
   tata->position.posY = 0;
   return tata;
 }
+
 void detruirePion(pion_t* tata){
   free(tata);
 }
-void rotationPion(pion_t* p, char rotation){
-  p->orientation = rotation;
+
+void rotationPion(pion_t* p){
+    char rotation;
+    printf("Dans quelle direction voulez vous vous orienter :?\n");
+    printf("                        h   \n");
+    printf("                     g<-|->d   \n");
+    printf("                        b   \n");
+
+    do{
+        scanf("%c",&rotation);
+    }while((rotation!='h')&&(rotation!='b')&&(rotation!='g')&&(rotation!='d'));
+    p->orientation = rotation;
 }
+
 void afficherPosition(pion_t* tata){
   printf("Le pion est en (%d,%d)\n Il est orienté vers  : %c \n Sur le plateau  = %d",tata->position.posX,tata->position.posY,tata->orientation,tata->surPlateau);
 }
+
+

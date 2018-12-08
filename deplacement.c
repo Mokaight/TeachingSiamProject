@@ -20,13 +20,13 @@ break;
 return direction;
 }
 
-void Deplacement(pion_t* pion, plateau_t* t, int direction, int AutorisationPoids){
+/*void Deplacement(pion_t* pion, plateau_t* t, int direction, int AutorisationPoids, int* compteurELE, int* compteurRHI){
 int compteur=0,compteurCLONE,X,Y,r,rCLONE;
 pion_t* pionCLONE;
 pionCLONE=pion;
 X=pion->position.posX;
 Y=pion->position.posY;
-if(AutorisationPoids=1)
+if(AutorisationPoids==1)
 {
 if((direction<-1)||(direction>1))
 {
@@ -43,16 +43,23 @@ if((direction<-1)||(direction>1))
     }
     printf("compteur=%d\n",compteur);
     compteurCLONE=compteur;
-    while(compteurCLONE>0)
+    if((X+compteur<6)&&(X+compteur>-1))
     {
-        printf("3\n");
-        t->plateau[Y][X+compteur]=t->plateau[Y][X+compteur-r];
-        printf("%d\n",t->plateau[Y][X+compteur]->race);
-        compteurCLONE-=1;
+        while(compteurCLONE>0)
+        {
+            printf("3\n");
+            t->plateau[Y][X+compteur]=t->plateau[Y][X+compteur-r];
+            printf("%d\n",t->plateau[Y][X+compteur]->race);
+            compteurCLONE-=1;
+        }
+        printf("4\n");
+        t->plateau[Y][X]=initialiserVide();
+        printf("5\n");
     }
-    printf("4\n");
-    t->plateau[Y][X]=initialiserVide();
-    printf("5\n");
+    else
+    {
+
+    }
 }
 if((direction>-2)||(direction<2))
 {
@@ -74,7 +81,31 @@ if((direction>-2)||(direction<2))
 }
 }
 else printf("Action impossible\n");
-
-
-
 }
+*/
+void EntrerPion(pion_t* CaseChoisie, plateau_t* t, int joueur,int* compteurELE, int* compteurRHI)
+{
+    if(joueur==1)
+    {
+        CaseChoisie=initialiserPionElephant();
+        RetirerReserveElephant(t,compteurELE);
+
+    }
+    else if(joueur==2)
+    {
+        CaseChoisie=initialiserPionRhino();
+        RetirerReserveRhino(t,compteurRHI);
+    }
+}
+
+void SortirPion(pion_t* CaseChoisie, plateau_t* t, int joueur,int* compteurELE, int* compteurRHI)
+{
+    CaseChoisie=initialiserVide();
+    if(joueur==1)
+        AjouterReserveElephant(t,compteurELE);
+    else
+        AjouterReserveRhino(t,compteurRHI);
+}
+
+
+

@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1544305896 source:c:\users\spacejourney\documents\cours\info\build2\deplacement.h
+	"plateau.h"
+
+1544303680 c:\users\spacejourney\documents\cours\info\build2\plateau.h
+	<stdlib.h>
+	<stdio.h>
+	"pion.h"
+
+1544296834 c:\users\spacejourney\documents\cours\info\build2\pion.h
+	<stdlib.h>
+	<stdio.h>
+	"position.h"
+
+1544111656 c:\users\spacejourney\documents\cours\info\build2\position.h
+
+1544305409 source:c:\users\spacejourney\documents\cours\info\build2\main.c
+	<stdlib.h>
+	<stdio.h>
+	"plateau.h"
+
+1544305553 source:c:\users\spacejourney\documents\cours\info\build2\pion.c
+	<stdlib.h>
+	<stdio.h>
+	<stdbool.h>
+	"plateau.h"
+
+1544296834 source:c:\users\spacejourney\documents\cours\info\build2\pion.h
+	<stdlib.h>
+	<stdio.h>
+	"position.h"
+
+1544295625 source:c:\users\spacejourney\documents\cours\info\build2\plateau.c
+	<stdlib.h>
+	<stdio.h>
+	"plateau.h"
+
+1544303680 source:c:\users\spacejourney\documents\cours\info\build2\plateau.h
+	<stdlib.h>
+	<stdio.h>
+	"pion.h"
+
+1544111656 source:c:\users\spacejourney\documents\cours\info\build2\position.h
+
+1544220446 source:c:\users\spacejourney\documents\cours\info\build2\selection.c
+	"plateau.h"
+
+1544305835 source:c:\users\spacejourney\documents\cours\info\build2\deplacement.c
+	"plateau.h"
+

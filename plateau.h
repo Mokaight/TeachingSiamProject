@@ -1,8 +1,7 @@
 #include<stdlib.h>
 #include<stdio.h>
 #include "pion.h"
-//Structure de données
-//typedef c'est " faire un renommage" de struct personnage_s en personnage_t
+
 typedef struct plateau_s
 {
   pion_t* plateau[5][5];
@@ -11,9 +10,13 @@ typedef struct plateau_s
   pion_t* reserveMontagne[3];
 }plateau_t;
 
-//fonction associées au plateau
 plateau_t* initialisePlateau();
 void detruirePlateau(plateau_t* t);
 void afficherPlateau(plateau_t* p);
-
 void preparerPlateauPourJeu(plateau_t* t);
+void RetirerReserveElephant(plateau_t* t, int* compteurELE);
+void RetirerReserveRhino(plateau_t* t, int* compteurRHI);
+void AjouterReserveElephant(plateau_t* t, int* compteurELE);
+void AjouterReserveRhino(plateau_t* t, int* compteurRHI);
+void FinDuJeu(pion_t* pion, int* victoire);
+pion_t* selectionPion(plateau_t* t);

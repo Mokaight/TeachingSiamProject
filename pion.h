@@ -2,9 +2,6 @@
 #include<stdio.h>
 #include "position.h"
 
-//Structure de données
-//permet d'écrire PION+PION  pion_t toto
-//Un pion qui est AUTRE + VIDE est une case vide
 typedef enum poids_s{
   PION=2,MONTAGNE=1,VIDE=0
 }poids_t;
@@ -12,7 +9,7 @@ typedef enum poids_s{
 typedef enum type_s{
   ELEPHANT=1,RHINO=2,AUTRE=0
 }type_t;
-//typedef c'est " faire un renommage" de struct personnage_s en personnage_t
+
 typedef struct pion_s
 {
     type_t race;
@@ -22,14 +19,13 @@ typedef struct pion_s
     position_t position;
 }pion_t;
 
-//déclaration de mes fonctions
 pion_t* initialiserVide();
 pion_t* initialiserPionElephant();
 pion_t* initialiserPionRhino();
 pion_t* initialiserPionMontagne();
 void detruirePersonnage(pion_t* tata);
 void afficherPosition(pion_t* tata);
-void rotationPion(pion_t* p, char rotation);
+void rotationPion(pion_t* p);
 
-//poserPion qui nétait pas sur le platea
+
 
